@@ -11,8 +11,23 @@ const TeamList = ({teams}) => {
     return (
         <div className="TeamList">
             <h2> This is the TeamList</h2>
-            <p>TEAM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Goal &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; INFO &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Win &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Loss&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Draw &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Score&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Conceeded &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; POINTS</p>
-            {teamsItems}
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Team</th>
+                        <th>W</th>
+                        <th>D</th>
+                        <th>L</th>
+                        <th>GF</th>
+                        <th>GA</th>
+                        <th>GD</th>
+                        <th>Played</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                    {teamsItems} 
+            </table>
         </div>
     )
 }
