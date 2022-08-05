@@ -1,24 +1,29 @@
-import logo from './logo.svg';
+import TeamBox from './containers/TeamContainer';
 import './App.css';
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+    <header className='App-header'>
+        <h1>Your Average Football App</h1>
+      <nav>
+          <ul>
+            <li><a href=''>The Premier League 21/22</a></li>
+            <li><a href=''>Your Team</a></li>
+            <li><a href=''>Settings</a></li>
+          </ul>
+      </nav>
+    </header>
+        
+
+      <div className="App">
+        <TeamBox />
+      </div>
     </div>
+
   );
 }
 

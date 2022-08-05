@@ -1,0 +1,10 @@
+.TeamBox {
+    margin: 40px;
+    padding: 20px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+main {
+    display: flex;
+}
