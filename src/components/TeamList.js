@@ -2,18 +2,19 @@ import './TeamList.css';
 import React from "react";
 import TeamItem from "./TeamItem";
 
-const TeamList = ({teams}) => {
+const TeamList = ({teams, selectedSeason, onTeamClick}) => {
 
     const teamsItems = teams.map((team, index) => {
-        return <TeamItem team={team} key={index}/>
+        return <TeamItem team={team} key={index} onTeamClick={onTeamClick}/>
     })
 
     return (
         <div className="TeamList">
             <h2> This is the TeamList</h2>
+            <h3>Selected Season: {selectedSeason}</h3>
             <table>
                 <thead>
-                    <tr>
+                    <tr className='header'>
                         <th>#</th>
                         <th>Team</th>
                         <th>W</th>

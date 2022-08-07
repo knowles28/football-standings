@@ -4,3 +4,39 @@
     border: 1px black solid;
     border-radius: 10px;
 }
+
+
+
+
+table {
+    overflow: hidden;
+}
+
+th {
+    background-color: rgba(211, 211, 211, 0.317);
+}
+
+th, td {
+    padding: 10px;
+    position: relative;
+}
+
+tr:not(:first-child):hover {
+    background-color: rgb(252, 247, 241);
+}
+
+th:not(:first-child):hover::after,td:not(:first-child):hover::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(252, 247, 241);
+    left: 0;
+    top: -5000px;
+    height: 10000px;
+    width: 100%;
+    z-index: -1;
+
+}
+
+/* tr:nth-child(odd) {
+    background-color: rgba(240, 248, 255, 0.811);
+} */

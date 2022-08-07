@@ -8,10 +8,10 @@ function App() {
     <div>
 
     <header className='App-header'>
-        <h1>Your Average Football App</h1>
+        <h1>⚽️ Average Football Dashboard</h1>
       <nav>
-          <ul>
-            <li><a href=''>The Premier League 21/22</a></li>
+          <ul className="menu">
+            <li><a href=''>The Premier League</a></li>
             <li><a href=''>Your Team</a></li>
             <li><a href=''>Settings</a></li>
           </ul>
