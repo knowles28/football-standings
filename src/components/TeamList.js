@@ -5,7 +5,7 @@ import TeamItem from "./TeamItem";
 const TeamList = ({teams, selectedSeason, onTeamClick}) => {
 
     const teamsItems = teams.map((team, index) => {
-        return <TeamItem team={team} key={index} onTeamClick={onTeamClick}/>
+        return <TeamItem team={team} key={index} value={index} onTeamClick={onTeamClick}/>
     })
 
     return (
@@ -27,7 +27,7 @@ const TeamList = ({teams, selectedSeason, onTeamClick}) => {
                         <th>Points</th>
                     </tr>
                 </thead>
-                    {teamsItems} 
+                {teamsItems} 
             </table>
         </div>
     )

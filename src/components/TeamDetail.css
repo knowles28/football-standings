@@ -5,3 +5,17 @@
     border-radius: 10px;
     background-color: rgb(252, 247, 241);
 }
+
+.team-layout {
+    padding: 40px;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.club-badge {
+    height: 40%;
+    width: 40%;
+    padding: 50px;
+}

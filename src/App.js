@@ -8,7 +8,7 @@ function App() {
     <div>
 
     <header className='App-header'>
-        <h1>⚽️ Average Football Dashboard</h1>
+        <h1>⚽️ An Average Football Dashboard</h1>
       <nav>
           <ul className="menu">
             <li><a href=''>The Premier League</a></li>
